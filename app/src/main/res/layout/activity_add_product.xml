@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AddProduct">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:titleTextColor="#FFFFFF"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/nameProduct"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="200dp"
+            android:hint="Nombre product"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/priceProduct"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/nameProduct"
+            android:hint="Precio"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/offerPrice"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/priceProduct"
+            android:hint="Precio de oferta"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+        <CheckBox
+            android:id="@+id/checkNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Novedad?"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/offerPrice"
+            />
+
+        <Spinner
+            android:id="@+id/typeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/checkNews"
+            />
+
+        <Button
+            android:id="@+id/addImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/typeSpinner"
+            android:layout_marginTop="20dp"
+            android:text="Añadir imagen"
+            android:background="@drawable/rounded_button"
+            android:onClick="addImgProduct"
+            />
+
+        <ImageView
+            android:id="@+id/imgVisualizar"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/no_image" />
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/addImg"
+            android:text="@string/accept"
+            android:background="@drawable/rounded_button"
+            />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/addImg"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/cancel"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

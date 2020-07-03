@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/banner" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/icon_email"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_password"/>
+
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="490dp"
+        android:text="@string/accept"
+        android:background="@drawable/rounded_button"
+        />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="210dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/cancel"
+        />
+
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regístrate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="560dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="goToSignUp"
+        />
+
+</RelativeLayout>

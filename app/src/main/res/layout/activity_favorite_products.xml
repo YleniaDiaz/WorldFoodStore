@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoriteProducts"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarFavoriteProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recViewFavoriteProducts"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        />
+
+    <!--<TextView
+        android:id="@+id/txtDefaultFavoriteProducts"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Todavía no tienes productos favoritos"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="700dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        /> -->
+
+</RelativeLayout>

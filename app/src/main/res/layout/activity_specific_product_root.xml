@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".SpecificProductRoot">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/no_image"
+            />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgProduct"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Nombre: "
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgProduct"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="120dp"
+            android:textSize="20dp"
+            android:text="product"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtName"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Precio: "
+            />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtName"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="120dp"
+            android:textSize="20dp"
+            android:text="precio"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="¿Está en novedades?: "
+            />
+
+        <TextView
+            android:id="@+id/isNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="240dp"
+            android:textSize="20dp"
+            android:text="novedad"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/isNew"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="¿Precio de oferta?: "
+            />
+
+        <TextView
+            android:id="@+id/isOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/isNew"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="220dp"
+            android:textSize="20dp"
+            android:text="precio de oferta"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/isOffer"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Cantidades vendidas: "
+            />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/isOffer"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="240dp"
+            android:textSize="20dp"
+            android:text="total cantidad"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

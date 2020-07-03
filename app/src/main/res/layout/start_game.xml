@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/scenery_supermarket">
+
+    <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow">
+
+        <TextView
+            android:id="@+id/textViewScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="PUNTUACIÓN: "
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="0"
+            />
+    </RelativeLayout> -->
+
+    <ImageView
+        android:id="@+id/fallingObject"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-100dp"
+        />
+
+    <ImageView
+        android:id="@+id/cartGame"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="620dp"
+        android:src="@mipmap/shopping_cart_to_rigth" />
+
+</RelativeLayout>

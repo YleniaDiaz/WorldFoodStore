@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "526076530532",
+    "firebase_url": "https://worldfoodstore-23.firebaseio.com",
+    "project_id": "worldfoodstore-23",
+    "storage_bucket": "worldfoodstore-23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526076530532:android:70aebd7f9b6adc09b17471",
+        "android_client_info": {
+          "package_name": "com.example.worldfoodstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526076530532-lbcm5c0d763q1oalugn9cidc5o8je3rv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.worldfoodstore",
+            "certificate_hash": "85d2b48ae3ffd33f3901ecdb388787f3f6466fce"
+          }
+        },
+        {
+          "client_id": "526076530532-9bk9pojaugmpfh0bce40a7fqop7vghmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIbncblG8_qmG7bjpzyaJhFIkEH1DtiOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526076530532-9bk9pojaugmpfh0bce40a7fqop7vghmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

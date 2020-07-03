@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/signUp"
+        android:title="Iniciar sesión"
+        android:icon="@drawable/user_icon"
+        />
+
+    <item
+        android:id="@+id/favorites"
+        android:title="Lista de favoritos"
+        />
+
+    <item
+        android:id="@+id/orders"
+        android:title="Lista de pedidos"
+        />
+
+    <item
+        android:id="@+id/game"
+        android:title="Juego"
+        />
+
+    <item
+        android:id="@+id/logOut"
+        android:title="Cerrar sesión"
+        />
+
+
+</menu>

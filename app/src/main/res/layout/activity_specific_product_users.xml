@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".SpecificProductUsers">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorito"
+        android:layout_below="@id/toolbarUser"
+        android:layout_marginStart="290dp"
+        android:textSize="20sp"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        />
+
+    <CheckBox
+        android:id="@+id/favouriteCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@id/toolbarUser"
+        android:layout_alignEnd="@id/toolbarUser"
+        android:layout_marginEnd="10dp"
+        android:onClick="isChecked"
+        />
+
+    <ImageView
+        android:id="@+id/imageSpecificProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/no_image"
+        android:layout_below="@id/toolbarUser"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/nameSpecificProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_below="@id/imageSpecificProduct"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/priceSpecificProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@id/nameSpecificProduct"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Añadir al carrito"
+        android:background="@drawable/rounded_button"
+        android:onClick="addShoppingList"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/priceSpecificProduct"
+        android:layout_marginTop="50dp"
+        />
+
+</RelativeLayout>
